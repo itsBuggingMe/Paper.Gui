@@ -5,7 +5,7 @@ Paper.Gui is a simple Gui Library -Monogame style.
 The philosophy is to allow you to easily make Guis, while location/scaling is handled by the library
 	
 The library first assumes the user is using a certain resolution, and provides information about location and scaling based on the actual location.
-## Usage
+## Usage  
 
 ### Initalization
 The library must first be initalized.
@@ -23,7 +23,7 @@ protected override void Initialize()
 }
 ```
 
-Gui  "Elements" work as a Parent - Child relationship
+Gui  "Elements" work as a Parent - Child relationship  
 Every gui element has a parent gui element. A child gui's location is relative to it's parent.
 The only gui element that does not have a parent is from the `BaseGui` class
 ```csharp
@@ -53,8 +53,8 @@ void ButtonClick()
 }
 ```
 
-### Updating
-The BaseGui object has to have `Tick(GameTime gameTime)` and `Draw(GameTime gameTime)` manually called.
+### Updating  
+The BaseGui object has to have `Tick(GameTime gameTime)` and `Draw(GameTime gameTime)` manually called.  
 
 ```csharp
 //your Game1 class
@@ -76,8 +76,8 @@ protected override void Draw(GameTime gameTime)
 }
 ```
 
-### Making own elements
-Say you have a settings menu with many gui elements.
+### Making own elements  
+Say you have a settings menu with many gui elements.  
 ```csharp
 BaseGui GuiBase = new BaseGui();
 
@@ -90,7 +90,7 @@ var someButton = new Button(
 	ButtonClick);
 	
 GuiBase.AddElement(someButton);
-//..other elements
+//...other elements
 
 ```
 To reuse the settings menu in multiple locations, you could refactor into a class the extends Gui
@@ -108,7 +108,7 @@ internal class SettingsMenu : Gui
 			ButtonClick);
 			
 		GuiBase.AddElement(someButton);
-		//..other elements
+        //...other elements
 
     }
 }
