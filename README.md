@@ -1,5 +1,5 @@
 # Paper.Gui 
-![image](https://raw.githubusercontent.com/itsBuggingMe/Paper.Gui/master/icon.png)
+![image](https://raw.githubusercontent.com/itsBuggingMe/Paper.Gui/master/icon.png)    
 Paper.Gui is a simple Gui Library -Monogame style. 
 
 The philosophy is to allow you to easily make Guis, while location/scaling is handled by the library
