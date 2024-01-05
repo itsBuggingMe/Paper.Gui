@@ -152,3 +152,11 @@ internal class RainbowBox : Gui
     }
 }
 ```
+
+### Other important things
+
+`ElementAlign` class provides many Vector2s for aligning text  
+
+`Gui.ScaleVector` provides additional scaling information
+
+`Gui.PreferredSize` the size inputted when calling Initalize
